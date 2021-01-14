@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<style>
+
+/* -------------------------classes--------------------------- */
+.heading{
+    font-size: 50px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.h{
+    font-size: 25px;
+}
+
+.p{
+    font-size: 20px;
+}
+.fclass{
+    font-size: 16px;
+    float: right;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.87);
+    font-style: italic;
+}
+aside{
+    
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgb(172, 165, 165);
+    display: block;
+    font-size: 16px;
+}
+/* ----------------------------------Horizontal list------------------------- */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(120, 153, 185);
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(5, 5, 5);
+    color: white;
+}
+/* -------------------logo--------------- */
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+
+}
+.ml3 {
+font-weight: 900;
+font-size: 3.5em;
+font-size: 50px;
+text-align: center;
+font-family:Cambria ;
+color: rgb(18, 25, 34);
+}
+/* -------------------------------------images--------------------- */
+.zoom {
+  padding: 10px;
+ 
+  transition: transform .2s;
+  width: auto;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+
+</style>
+<title>The first title</title>
+
+
+
+<!-- ------------------------------BODY-------------------------------------------- -->
+
+<body>
+<div>
+<h1 class="ml3">THE PRESIDENT</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ 
+</div>
+  
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100009965375352&sk=about" target="_blank">Personal details</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li><a href="#Pictures">pictures</a></li>
+</ul>
+<h1 class="h">President Nizaam welcomes You!</h1>
+<p class="p">Here are some Personal details:</p>
+<p>Btw there are no details as of now 😁. <br>So you are gonna see just the bakwas things, Enjoy it. </p>
+<p>
+Syntel Company is proud to tell you that your son has been selected as the salesperson of the year.<br>
+He is very dedicated and hardworking and has always stood ahead in all his work. He has been a very<br>
+enthusiastic employee and always likes to excel in whatever he does. We are sure that the achievement<br>
+he received is because of the strength and support from his family.<br>
+
+From the day he joined the company he excelled in his performance and is an employee who is well known not<br>
+alone in his department but the entire company. He has always been a person who has participated in all <br>
+the cultural activities and works which were out of his responsibilities. He is the first employee to get<br>
+this award at such a young age. He is one of the most liked employees and ready to take up any challenges<br>
+and gives his best in all his work. <br>
+    
+It’s tough for anyone to get such success without family support and as a token of thanks to the family,<br>
+we are providing him with a week’s paid leave so that you can spend some good time together.<br>
+
+</p>
+<aside>
+<pre>
+This is the float which is gonna
+be placed at  the right side of
+This page. I'm enjoying This thing.
+</pre>
+</aside>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 id="Contact">Contact</h1>
+<p>Sorry again. this is just a demo so you cannot look for the contact.</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 id="Pictures">Pictures</h1>
+<p>Okay this time you're not gonna be dissappointed, you'll definitely see some pictures. <br>Emjoy it!</p>
+<br>
+<br>
+<br>
+<a href="https://www.facebook.com/photo/?fbid=1179816419027193&set=a.109113409430838"><img class="zoom" src="nizaam1.jpg" alt="photo1" width="40%"></a> <a href="https://www.facebook.com/photo.php?fbid=1135215296820639&set=pb.100009965375352.-2207520000..&type=3"><img class="zoom" src="nizaam2.jpg" alt="photo2" width="40%"></a><br>
+<a href="https://www.facebook.com/photo.php?fbid=951385881870249&set=pb.100009965375352.-2207520000..&type=3"><img class="zoom" src="nizaam3.jpg" alt="photo3" height="800px"></a> <a href="https://www.facebook.com/photo.php?fbid=1314275885581245&set=pb.100009965375352.-2207520000..&type=3"><img class="zoom" src="nizaam4.jpg" alt="photo4" width="40%"></a>
+
+
+
+<script>
+    // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+</body>
+</head>
+</html>
